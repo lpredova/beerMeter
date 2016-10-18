@@ -1,0 +1,190 @@
+html, body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  height:100%;
+  width:100%;
+  margin:0;
+  padding:0;
+}
+#bubbles {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  background: #ff9c08;
+  z-index: -1;
+}
+#bubbles div {
+  background: #ffc36e;
+  border-radius: 100%;
+  position: absolute;
+  -webkit-animation: fade 10s infinite;
+}
+
+.beerStatus{
+    font-size: 30px;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    color: #fff;
+    text-align: center;
+}
+
+.mug {
+  margin: 40px auto 0;
+  position: relative;
+  width: 200px;
+  height: 300px;
+  border-style: none solid solid solid;
+  border-width: 0 15px 10px 15px;
+  border-color: #e2e2e2;
+  border-radius: 0px 0px 60px 60px
+}
+
+.beer {
+  background: #f7a22d;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 0 0 40px 40px;  
+  background: linear-gradient(to bottom,  rgba(255,197,120,1) 0%,rgba(251,157,35,1) 100%);  
+}
+
+.beerFoamless {
+  background: #f7a22d;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 0 0 40px 40px;  
+  background: linear-gradient(to bottom,  rgba(255,197,120,1) 0%,rgba(251,157,35,1) 100%);  
+}
+
+.beer::after {
+  background: #fdebad;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100px;
+  width: 100%;
+  display: block;
+  content: '';  
+}
+
+.ear {
+  position: absolute;
+  border: 15px solid #e2e2e2;
+  width: 50px;
+  height: 100px;
+  top: 60px;
+  right: -80px;
+  border-radius: 40px;
+  background: #ff9c08;
+}
+.ear::before{
+  display: block;
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 45px;
+  height: 94px;
+  border-radius: 30px;
+}
+
+.shine {
+  display: block;
+  position: absolute;
+  background: #fff;
+  width: 50px;
+  height: 200px;
+  top: 60px;
+  left: 15px;
+  border-radius: 20px;
+  opacity: 0.4;
+}
+
+.shine::after {
+  display: block;
+  content: '';
+  position: absolute;
+  background: #fff;
+  width: 50px;
+  height: 200px;
+  top: 0px;
+  left: 120px;
+  border-radius: 20px;
+}
+
+.shine::before {
+  display: block;
+  content: '';
+  position: absolute;
+  background: #fff;
+  width: 50px;
+  height: 200px;
+  top: 0px;
+  left: 60px;
+  border-radius: 20px;
+}
+
+.top {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+}
+
+.foam {
+  display: block;
+  background: #fff;
+  border-radius: 30px;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+}
+
+.foam:nth-child(1){
+  top: 10px;
+  left:-30px;
+}
+
+.foam:nth-child(2){
+  top: 10px;
+  left:90px;
+}
+
+.foam:nth-child(3){
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  top: 10px;
+  left:30px;
+}
+
+.foam:nth-child(4){
+  width: 90px;
+  height: 90px;
+  border-radius: 45px;
+  top: 0px;
+  right:-10px;
+}
+
+.foam:nth-child(5){
+  top: 20px;
+  right: -30px;
+}
+
+@media (min-width: 640px)
+.hero {
+  padding: 10rem 0;
+}
+
+@-webkit-keyframes fade{from{bottom:-24px;opacity:1;visibility:visible}to{bottom:120%}}@keyframes fade{from{bottom:-24px;opacity:1;visibility:visible}to{bottom:120%}}
