@@ -182,6 +182,10 @@ html, body {
   right: -30px;
 }
 
+.githubButtons{
+    margin-top: 30px; 
+}
+
 @media (min-width: 640px)
 .hero {
   padding: 10rem 0;
